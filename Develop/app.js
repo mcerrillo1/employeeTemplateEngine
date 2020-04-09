@@ -1,6 +1,7 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+//const Employees = require("./lib/Employee")
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -14,7 +15,7 @@ const render = require("./lib/htmlRenderer");
 const employee = []
 
 function managerPrompt{
-    inquirer.prompt(){[
+    inquirer.prompt([
         {
             type: "input",
             name: "name",
@@ -33,9 +34,9 @@ function managerPrompt{
         {
             type: "input",
             name: "office",
-            message: "What is your number?"
+            message: "What is your office number?"
         }
-    ]}
+    ])
 }
 //.then function to store and push input into employee array
 //function to run other prompt (call back)
@@ -43,7 +44,7 @@ function managerPrompt{
 //call function after manager prompt input
 //function to run engineer prompt
 function engineerPrompt(){
-    inquirer.prompt(){[
+    inquirer.prompt([
         {
             type: "input",
             name: "name",
@@ -62,49 +63,18 @@ function engineerPrompt(){
         {
             type: "input",
             name: "office",
-            message: "What is your number?"
+            message: "What is your github username?"
         }
-    ]}
+    ])
 };
 //create new const to hold new employee and instantiate Employee class to create new instance
 //.then function to store and push input into employee array
 //function to run other prompt (call back)
-
-//call function after manager prompt input
-//function to run engineer prompt
-function engineerPrompt(){
-    inquirer.prompt(){[
-        {
-            type: "input",
-            name: "name",
-            message: "What is your name?"
-        },
-        {
-            type: "input",
-            name: "id",
-            message: "What is your id?"
-        },
-        {
-            type: "input",
-            name: "email",
-            message: "What is your email?"
-        },
-        {
-            type: "input",
-            name: "office",
-            message: "What is your number?"
-        }
-    ]}
-};
-//create new const to hold new employee and instantiate Employee class to create new instance
-//.then function to store and push input into employee array
-//function to run other prompt (call back)
-
 
 //call function after manager prompt input
 //function to run engineer prompt
 function internPrompt(){
-    inquirer.prompt(){[
+    inquirer.prompt([
         {
             type: "input",
             name: "name",
@@ -123,13 +93,16 @@ function internPrompt(){
         {
             type: "input",
             name: "office",
-            message: "What is your number?"
+            message: "What is your github username?"
         }
-    ]}
+    ])
 };
 //create new const to hold new employee and instantiate Employee class to create new instance
 //.then function to store and push input into employee array
 //function to run other prompt (call back)
+
+
+
 
 
 
