@@ -11,6 +11,132 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 
+const employee = []
+
+function managerPrompt{
+    inquirer.prompt(){[
+        {
+            type: "input",
+            name: "name",
+            message: "What is your name?"
+        },
+        {
+            type: "input",
+            name: "id",
+            message: "What is your id?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email?"
+        },
+        {
+            type: "input",
+            name: "office",
+            message: "What is your number?"
+        }
+    ]}
+}
+//.then function to store and push input into employee array
+//function to run other prompt (call back)
+
+//call function after manager prompt input
+//function to run engineer prompt
+function engineerPrompt(){
+    inquirer.prompt(){[
+        {
+            type: "input",
+            name: "name",
+            message: "What is your name?"
+        },
+        {
+            type: "input",
+            name: "id",
+            message: "What is your id?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email?"
+        },
+        {
+            type: "input",
+            name: "office",
+            message: "What is your number?"
+        }
+    ]}
+};
+//create new const to hold new employee and instantiate Employee class to create new instance
+//.then function to store and push input into employee array
+//function to run other prompt (call back)
+
+//call function after manager prompt input
+//function to run engineer prompt
+function engineerPrompt(){
+    inquirer.prompt(){[
+        {
+            type: "input",
+            name: "name",
+            message: "What is your name?"
+        },
+        {
+            type: "input",
+            name: "id",
+            message: "What is your id?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email?"
+        },
+        {
+            type: "input",
+            name: "office",
+            message: "What is your number?"
+        }
+    ]}
+};
+//create new const to hold new employee and instantiate Employee class to create new instance
+//.then function to store and push input into employee array
+//function to run other prompt (call back)
+
+
+//call function after manager prompt input
+//function to run engineer prompt
+function internPrompt(){
+    inquirer.prompt(){[
+        {
+            type: "input",
+            name: "name",
+            message: "What is your name?"
+        },
+        {
+            type: "input",
+            name: "id",
+            message: "What is your id?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email?"
+        },
+        {
+            type: "input",
+            name: "office",
+            message: "What is your number?"
+        }
+    ]}
+};
+//create new const to hold new employee and instantiate Employee class to create new instance
+//.then function to store and push input into employee array
+//function to run other prompt (call back)
+
+
+
+
+
+
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
